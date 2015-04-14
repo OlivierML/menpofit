@@ -1942,10 +1942,10 @@ def visualize_fitting_results(fitting_results, figure_size=(10, 8),
             info_wid.children[1].children[3].value = \
                 "> {} levels with downscale of {:.1f}".format(
                     fitting_results[im].n_levels, fitting_results[im].downscale)
-            info_wid.children[1].children[1].visible = True
+            info_wid.children[1].children[3].visible = True
         else:
-            info_wid.children[1].children[1].value = ''
-            info_wid.children[1].children[1].visible = True
+            info_wid.children[1].children[3].value = ''
+            info_wid.children[1].children[3].visible = True
 
     # Create options widgets
     channel_options_wid = channel_options(
