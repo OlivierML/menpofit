@@ -2418,7 +2418,7 @@ def plot_ced(errors, figure_size=(10, 8), error_type='me_norm',
                                         plot_function=plot_function,
                                         toggle_show_visible=False,
                                         toggle_show_default=True,
-                                        labels=[legend_entries])
+                                        labels=[legend_entries] * len(legend_entries))
 
     # save figure widget
     initial_renderer = MatplotlibImageViewer2d(figure_id=None, new_figure=True,
